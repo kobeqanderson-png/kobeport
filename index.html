@@ -76,7 +76,18 @@ body{background:#f4f1ea;color:#1c1c1c;font-family:'Inter',sans-serif;line-height
 .site-footer a{color:#f4f1ea;text-decoration:none;font-weight:600}
 .footer-rule{border:none;border-top:1px solid #444;margin:1rem auto;max-width:300px}
 .footer-small{font-size:0.75rem;opacity:.7;margin-top:0.5rem}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin:1.5rem 0 2rem}
+@media(max-width:820px){.svc-grid{grid-template-columns:1fr}}
+.svc-card{border:1px solid #1c1c1c;padding:1.4rem;display:flex;flex-direction:column;gap:0.6rem}
+.svc-title{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:600;line-height:1.25;color:#1c1c1c}
+.svc-body{font-size:0.85rem;color:#444;line-height:1.6;flex:1}
+.svc-price{font-family:'JetBrains Mono',monospace;font-size:0.72rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#b8361c}
+.cta-row{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap}
+.cta-btn{display:inline-block;background:#1c1c1c;color:#f4f1ea;font-family:'Inter',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;padding:0.9rem 1.6rem;transition:background .2s}
+.cta-btn:hover{background:#b8361c}
+.cta-note{font-size:0.8rem;color:#666}
 </style>
+<base target="_blank">
 </head>
 <body>
 
@@ -92,6 +103,7 @@ body{background:#f4f1ea;color:#1c1c1c;font-family:'Inter',sans-serif;line-height
       <li><a href="#analysis">Analysis</a></li>
       <li><a href="#tools">Tools</a></li>
       <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#hire">Hire Me</a></li>
     </ul></nav>
   </div>
 </header>
@@ -103,7 +115,7 @@ body{background:#f4f1ea;color:#1c1c1c;font-family:'Inter',sans-serif;line-height
     <div class="hero-byline-item">Institution: <span>Towson University</span></div>
     <div class="hero-byline-item">Program: <span>Behavioral Neuroscience M.A.</span></div>
     <div class="hero-byline-item">Focus: <span>Spatial Navigation &amp; Memory</span></div>
-    <div class="hero-byline-item">Contact: <span>kobe.q.anderson@gmail.com</span></div>
+    <div class="hero-byline-item">Contact: <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7813171a1d56095619161c1d0a0b1716381f15191114561b1715">[email&#160;protected]</a></span></div>
   </div>
 </section>
 
@@ -119,6 +131,32 @@ body{background:#f4f1ea;color:#1c1c1c;font-family:'Inter',sans-serif;line-height
         <span class="skill-tag">Python</span><span class="skill-tag">R / ggplot2</span><span class="skill-tag">JavaScript</span><span class="skill-tag">C# / Unity</span><span class="skill-tag">PyOpenGL</span><span class="skill-tag">scikit-learn</span><span class="skill-tag">statsmodels</span><span class="skill-tag">Azure Fns</span><span class="skill-tag">Django</span><span class="skill-tag">Plotly</span><span class="skill-tag">D3.js</span><span class="skill-tag">PyInstaller</span>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="layout" id="hire">
+  <div class="section-header"><span class="section-label">Services</span><h2 class="section-title">Work With Me</h2></div>
+  <p class="article-body" style="max-width:44rem">I help researchers, nonprofits, and small businesses get real answers out of messy data. Every project starts with a <strong>free sample of the work</strong> &mdash; you see what you&rsquo;ll get before you commit to anything.</p>
+  <div class="svc-grid">
+    <div class="svc-card">
+      <h3 class="svc-title">Research Data Cleaning</h3>
+      <p class="svc-body">Qualtrics exports, reverse-coded items, missing data, sex-stratified summaries &mdash; delivered analysis-ready, with documentation.</p>
+      <span class="svc-price">$25&ndash;35 / hour</span>
+    </div>
+    <div class="svc-card">
+      <h3 class="svc-title">Survey Design &amp; Redesign</h3>
+      <p class="svc-body">Questions that actually measure what you think they measure. Built on formal experimental-design training, not guesswork.</p>
+      <span class="svc-price">$150&ndash;300 flat</span>
+    </div>
+    <div class="svc-card">
+      <h3 class="svc-title">Dashboards &amp; Reports</h3>
+      <p class="svc-body">Your spreadsheet becomes a clean, interactive web dashboard your team will actually use. No IT department, no licenses, hosted free.</p>
+      <span class="svc-price">$300&ndash;500 flat</span>
+    </div>
+  </div>
+  <div class="cta-row">
+    <a class="cta-btn" href="/cdn-cgi/l/email-protection#b6ddd9d4d398c798d7d8d2d3c4c5d9d8f6d1dbd7dfda98d5d9db89c5c3d4dcd3d5c28be6c4d9dcd3d5c2938486dfd8c7c3dfc4cf">Email Me</a>
+    <span class="cta-note">Replies within 24 hours &bull; Baltimore / Towson area &bull; Remote friendly</span>
   </div>
 </section>
 
@@ -251,8 +289,8 @@ body{background:#f4f1ea;color:#1c1c1c;font-family:'Inter',sans-serif;line-height
 <footer class="site-footer">
   <div>Kobe Anderson &mdash; Behavioral Neuroscience &amp; Data Science</div>
   <hr class="footer-rule" />
-  <div><a href="mailto:kobe.q.anderson@gmail.com">kobe.q.anderson@gmail.com</a></div>
+  <div><a href="/cdn-cgi/l/email-protection#5c37333e39722d723d3238392e2f33321c3b313d3530723f3331"><span class="__cf_email__" data-cfemail="204b4f42450e510e414e444552534f4e60474d41494c0e434f4d">[email&#160;protected]</span></a></div>
   <div class="footer-small">Updated April 2026 &nbsp;&bull;&nbsp; Towson University</div>
 </footer>
-</body>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>
