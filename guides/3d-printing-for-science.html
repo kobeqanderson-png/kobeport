@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3D Printing for Science | Kobe Anderson</title>
+<meta name="description" content="A practical starting guide for turning a small lab workflow problem into a measured, testable 3D-printed prototype.">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="wrap">
+<a class="brand" href="../index.html">Kobe Anderson<small>Build guides</small>
+</a>
+<nav aria-label="Guide navigation">
+<a href="../index.html#build">← Back to the portfolio</a>
+<a href="https://github.com/kobeqanderson-png/kobeport/issues/new/choose">Suggest a correction</a>
+</nav>
+</div>
+</header>
+<main class="wrap prose" id="main">
+<p class="eyebrow">Practical guide / 01</p>
+<h1>Put the printer to work on a research problem.</h1>
+<p class="lead">The useful question is: what small part of this workflow could be easier, more consistent, or less awkward?</p>
+<p>I use CAD and printing to explore physical solutions. This guide is a starting process for designing and checking a prototype. It is not a tested specification for a particular instrument or a claim that a particular filament is suitable for your lab conditions.</p>
+<h2>1. Choose a problem you can measure.</h2>
+<p>Start with a simple support or organization task. These examples are ideas to evaluate, not designs I am claiming to have validated:</p>
+<table>
+<thead>
+<tr>
+<th>Possible project</th>
+<th>What to measure</th>
+<th>A useful first check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A rack for capped sample containers</td>
+<td>Outer dimensions, spacing, base footprint, handling clearance</td>
+<td>Use empty containers to check fit, stability, and one-handed removal.</td>
+</tr>
+<tr>
+<td>A camera or cable positioning bracket</td>
+<td>Mounting interface, load, available space, cable bend clearance</td>
+<td>Check alignment and movement on a bench before installing near an experiment.</td>
+</tr>
+<tr>
+<td>A slide or tool organizer</td>
+<td>Item dimensions, labels, access, storage location</td>
+<td>Check that items can be identified and removed without contacting critical surfaces.</td>
+</tr>
+</tbody>
+</table>
+<h2>2. Write the requirement before opening CAD.</h2>
+<blockquote>“This part needs to hold [object] in [position] during [task], while allowing [action]. I will consider it successful if [observable criterion].”</blockquote>
+<p>Record the things the part will touch, the available space, the intended load, and whether it will encounter liquids, cleaning agents, or temperature changes. If those conditions matter, identify them before choosing a material.</p>
+<h2>3. Print the smallest useful fit test.</h2>
+<ol>
+<li>Measure the real object rather than relying only on its nominal size.</li>
+<li>Model the interface first: one slot, one hole, or one contact surface.</li>
+<li>Print a few candidate clearances and label each version. There is no universal clearance that works for every printer, material, and geometry.</li>
+<li>Check insertion, removal, movement, and access using empty or expendable stand-ins.</li>
+<li>Use the successful fit to build the full part, then test again: a good small fit does not establish whole-part strength or stability.</li>
+</ol>
+<h2>4. Match the test to the claim.</h2>
+<p>A part that fits has passed a fit check. That does not establish resistance to heat, cleaning chemicals, cold, repeated loading, or contamination. Use the material manufacturer’s information and the lab’s requirements to decide what additional evaluation is needed. Do not infer sterilizability or suitability for tissue contact from a successful print.</p>
+<p>For a simple organizer, inspect fit and access over repeated use. For a positioning jig, check repeatability against a reference. For a loaded bracket, establish an appropriate load test before putting valuable equipment on it. Record what you actually tested rather than describing the whole design as “validated.”</p>
+<h2>5. Make the next person’s starting point better.</h2>
+<p>A useful design release includes:</p>
+<ul>
+<li>An editable CAD source and printable STL or 3MF, with a version identifier.</li>
+<li>Dimensions, units, a bill of materials, and any purchased hardware.</li>
+<li>Printer, material, print orientation, layer height, walls, infill, supports, and any post-processing you actually used.</li>
+<li>A photograph of the printed part in use, plus assembly instructions.</li>
+<li>The acceptance check, observed results, failure cases, and conditions you have not evaluated.</li>
+<li>Clear reuse terms and credits for any design you adapted.</li>
+</ul>
+<h2>A record you can copy</h2>
+<p>Use the <a href="prototype-record.md" download>prototype record template</a> for your next design. It leaves untested fields blank so the document reflects the work you actually did.</p>
+<details>
+<summary>What should I avoid claiming?</summary>
+<p>Do not call a CAD render a tested device, a successful print a validated instrument, or a convenient holder a proven improvement in experimental reliability. Each of those is a different claim requiring different evidence.</p>
+</details>
+<details>
+<summary>How can I contribute?</summary>
+<p>Suggest a correction through a portfolio issue. Describe the use case, show the dimensions or non-sensitive photos, and distinguish a design idea from an observed result. A failed prototype can be useful if the failure is documented clearly.</p>
+</details>
+<div class="actions">
+<a class="button" href="../index.html#build">← Return to the portfolio</a>
+<a class="button" href="https://github.com/kobeqanderson-png/kobeport/issues/new/choose">Discuss the guide ↗</a>
+</div>
+</main>
+<footer>
+<div class="wrap">
+<span>Kobe Anderson · Building for science</span>
+<span>October 2026</span>
+</div>
+</footer>
+</body>
+</html>
