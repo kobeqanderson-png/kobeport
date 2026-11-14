@@ -1,17 +1,15 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Platform Checking Study</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap">
 <style>
 /* Layout: KPI strip, then the demo wall, then one results table across the three tests, then figure plates. Pool-water neutrals; sex colours carry the data. */
-:root { --bg:#eef2f3; --panel:#ffffff; --ink:#132029; --ink2:#53646d; --rule:#d2dce0; --accent:#0f6b74; --f:#2a78d6; --m:#d9591f; --sig:#0f6b74; --ns:#8a969c; --warn:#fff4dc; --warnline:#b67919;
-  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif; --body:"Source Sans 3","Segoe UI",Arial,sans-serif; --mono:"IBM Plex Mono",Consolas,monospace }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0d161b; --panel:#15222a; --ink:#e3eaee; --ink2:#9db0b9; --rule:#28383f; --accent:#5cc3cc; --f:#5b9cec; --m:#f08a5d; --sig:#5cc3cc; --ns:#7d8b91; --warn:#2a2416; --warnline:#d9a441; color-scheme:dark } }
-:root[data-theme="dark"] { --bg:#0d161b; --panel:#15222a; --ink:#e3eaee; --ink2:#9db0b9; --rule:#28383f; --accent:#5cc3cc; --f:#5b9cec; --m:#f08a5d; --sig:#5cc3cc; --ns:#7d8b91; --warn:#2a2416; --warnline:#d9a441; color-scheme:dark }
-*{box-sizing:border-box} body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;margin:0}
+:root { --bg:#fff; --panel:#fff; --ink:#000; --ink2:#444; --rule:#cfcfcf; --accent:#000; --f:#2a78d6; --m:#d9591f; --sig:#000; --ns:#777; --warn:#f5f5f3; --warnline:#000;
+  --display:"EB Garamond",Garamond,"Times New Roman",Georgia,serif; --body:"EB Garamond",Garamond,"Times New Roman",Georgia,serif; --mono:"EB Garamond",Garamond,"Times New Roman",Georgia,serif }
+*{box-sizing:border-box} body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.5;margin:0}
 .wrap{max-width:1240px;margin:0 auto;padding-block:28px 72px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:34px}
-h1,h2{font-family:var(--display);font-weight:600;margin:0;line-height:1.05;text-wrap:balance} h1{font-size:clamp(36px,6vw,58px)} h2{font-size:clamp(24px,3vw,32px)}
-.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1,h2{font-family:var(--display);font-weight:500;margin:0;line-height:1.05;text-wrap:balance} h1{font-size:clamp(36px,6vw,58px)} h2{font-size:clamp(24px,3vw,32px)}
+.eyebrow{font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
 .lede{font-size:19px;max-width:70ch;margin:10px 0 0} .f{color:var(--f);font-weight:600} .m{color:var(--m);font-weight:600}
 section{display:grid;gap:14px} .sub{color:var(--ink2);max-width:80ch;margin:0}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
@@ -36,6 +34,7 @@ td{font-size:17px} thead th span{display:block;text-transform:none;letter-spacin
 @media (max-width:480px){ .plates,.vids{grid-template-columns:1fr} .plate img{min-width:0} }
 </style>
 <div class="wrap">
+<nav style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid #000;padding-bottom:10px;font-size:15px"><a href="../../" style="color:inherit;text-decoration:none;font-size:22px">Kobe Q. Anderson</a><span><a href="../" style="color:inherit">Research summary</a> · <a href="../../cv.html" style="color:inherit">CV</a></span></nav>
 <header>
   <div class="eyebrow">SP1 + KAC water maze checking tests · DeepLabCut, cleaned tracking · SfN 2026 draft</div>
   <h1>Platform Checking Study</h1>

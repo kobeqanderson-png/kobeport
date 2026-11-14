@@ -1,255 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kobe Anderson | Open Research &amp; Working Ideas</title>
-<meta name="description" content="I take an idea or question and make something real. Behavioral neuroscience, open research software, and practical fabrication by Kobe Anderson.">
-<meta property="og:title" content="Kobe Anderson — From a question to something real">
-<meta property="og:description" content="Research tools in public beta. Explore MobileDLC, NeuroPipe-SABV, and practical guides to building for science.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://kobeport.vercel.app/">
+<title>Kobe Q. Anderson — Behavioral Neuroscience</title>
+<meta name="description" content="Kobe Q. Anderson, behavioral neuroscience M.A. candidate at Towson University. Pose tracking of rat behavior, compulsive checking, and open research tools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header>
-<div class="wrap">
-<a class="brand" href="#main">Kobe Anderson<span class="name-dot" aria-hidden="true">.</span><small>Behavioral neuroscience · Open research</small>
-</a>
-<nav aria-label="Main navigation">
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#build">Build guides</a>
-<a href="#research">Research</a>
-<a href="#collaborate">Collaborate</a>
-<a href="cv.html">CV</a>
-</nav>
-</div>
-</header>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="#main">Kobe Q. Anderson</a>
+  <nav aria-label="Main">
+    <a href="#research">Research</a>
+    <a href="#tools">Tools</a>
+    <a href="#about">About</a>
+    <a href="cv.html">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div></header>
+
 <main id="main">
 <section class="hero wrap">
-<p class="eyebrow">Kobe Anderson / Research in progress / 2026</p>
-<div class="hero-grid">
-<div>
-<h1>I take an idea<br>or question and<br><em>make something real.</em>
-</h1>
-<p class="lead">I’m Kobe, a behavioral neuroscience M.A. candidate at Towson University. I build software, work at the bench, and make tools for the questions I want to investigate.</p>
-<div class="actions">
-<a class="button primary" href="#projects">Explore the projects ↗</a>
-<a class="button" href="research/">Watch the research ↗</a>
-<a class="button" href="cv.html">CV</a>
-<a class="button" href="https://github.com/kobeqanderson-png">Review the code ↗</a>
-</div>
-</div>
-<aside class="hero-aside">
-<figure class="hero-art"><img src="assets/fabrication.jpeg" alt="A CAD view of an articulated assembly from my Tinkercad design work" width="900" height="572"><figcaption><span>From my workbench</span> / Tinkercad design study</figcaption></figure>
-<p class="eyebrow">What drives the work</p>
-<p>I don’t want a useful idea to stay an idea because I haven’t learned the next skill yet. I learn, build, test, and keep working on it.</p>
-<p>These projects are open to review and criticism. I want people to use them, question them, and help them become something better than I could make alone.</p>
-</aside>
-</div>
-<nav class="project-index" aria-label="Project index"><span>On the bench</span><a href="#mobiledlc"><b>01</b> MobileDLC <small>Labeling</small></a><a href="#neuropipe"><b>02</b> NeuroPipe-SABV <small>Analysis</small></a><a href="#build"><b>03</b> Building for science <small>Fabrication</small></a></nav>
+  <p class="label">Behavioral neuroscience · M.A. candidate, Towson University</p>
+  <h1>I take a question and make something real enough to test.</h1>
+  <p class="lead">I study learning, memory, and compulsive checking in rats, and I build the software I need to measure behavior more directly. Lab manager in the Laboratory of Comparative Neuroscience (Bryan D. Devan, Ph.D.).</p>
+  <div class="actions">
+    <a class="btn solid" href="research/">Watch the research</a>
+    <a class="btn" href="cv.html">CV</a>
+    <a class="btn" href="https://github.com/kobeqanderson-png">GitHub</a>
+  </div>
 </section>
-<section class="section wrap" id="about">
-<div class="two-col">
-<div>
-<p class="eyebrow">01 / About</p>
-<h2>The question<br>comes first.</h2>
-</div>
-<div>
-<p>My background is in behavioral neuroscience, with interests in learning, memory, spatial navigation, and individual differences in behavior. The questions lead me between behavioral experiments, data analysis, programming, and physical prototyping.</p>
-<p>I see my strength in taking a problem far enough that we can actually examine it: a working interface, an analysis we can inspect, or a physical tool we can try. I’m willing to learn what the next step requires—and change direction when the evidence calls for it.</p>
-<p class="muted">This site is a place to share that work as it develops, including its limits and the questions I haven’t answered yet.</p>
-</div>
-</div>
-</section>
-<section class="section wrap" id="projects">
-<div class="section-intro">
-<p class="eyebrow">02 / Open research projects</p>
-<h2>Work in the open.</h2>
-<p>MobileDLC and NeuroPipe-SABV are public betas. The code is available to inspect; broader usability, compatibility, and methodological review are still part of the work. A working demonstration is a starting point for that review.</p>
-</div>
-<article class="project" id="mobiledlc">
-<div>
-<span class="status">Public beta · Review invited</span>
-<h3>MobileDLC</h3>
-<p>
-<strong>Can labeling fit the way people actually work?</strong>
-</p>
-<p>A touch-based frame-labeling workflow for DeepLabCut. The aim is to let researchers work from a phone or tablet and bring their annotations back into their analysis workflow.</p>
-<ul>
-<li>Place, move, and remove keypoints with touch controls.</li>
-<li>Inspect frames with pan, zoom, and adjustable markers.</li>
-<li>Test the local labeler with a copy of a single-animal DLC project.</li>
-</ul>
-<div class="review">
-<strong>Where I want criticism</strong>Annotation precision, confusing gestures, accessibility, device behavior, and whether exported labels preserve the intended data.</div>
-<p class="muted">The local and hosted versions have different setup and export paths. The hosted lab workspace is access-controlled; start with the repository instructions for your own test.</p>
-<div class="actions">
-<a class="button primary" href="https://github.com/kobeqanderson-png/MobileDLC#readme">Start with the beta guide ↗</a>
-<a class="button" href="https://github.com/kobeqanderson-png/MobileDLC/issues/new/choose">Report a problem ↗</a>
-</div>
-</div>
-<div class="workflow" aria-label="MobileDLC workflow overview">
-<p class="eyebrow">The question → The workflow</p>
-<ol>
-<li>Choose a frame.</li>
-<li>Place or adjust a point.</li>
-<li>Save the annotation.</li>
-<li>Export and check it in DLC.</li>
-</ol>
-<p>Workflow overview, not an interface screenshot. The local editor exports H5/CSV copies. The hosted workflow exports JSON that requires a separate conversion step.</p>
-</div>
-</article>
-<article class="project" id="neuropipe">
-<div>
-<span class="status">Public beta · MIT licensed</span>
-<h3>NeuroPipe-SABV</h3>
-<p>
-<strong>How can sex as a biological variable stay visible throughout an analysis?</strong>
-</p>
-<p>A Streamlit workflow for exploring, preparing, comparing, and visualizing preclinical behavioral data with explicit attention to sex. I want the assumptions behind those steps to be easier to inspect and question.</p>
-<div class="review">
-<strong>Where I want criticism</strong>Sex metadata, data cleaning decisions, statistical assumptions, repeated observations, multiple comparisons, and the meaning of the figures it produces.</div>
-<p class="muted">The tool does not certify NIH compliance or validate a study design. Start with example data and inspect processing choices before using results.</p>
-<div class="actions">
-<a class="button primary" href="https://github.com/kobeqanderson-png/NeuroPipe-SABV#readme">Read the beta guide ↗</a>
-<a class="button" href="https://neuropipesabv.streamlit.app/">Open the beta app ↗</a>
-</div>
-</div>
-<figure>
-<img src="assets/neuropipe.jpeg" alt="Existing NeuroPipe-SABV project screenshot showing analysis outputs" loading="lazy">
-<figcaption>Project archive / An example of the analysis workflow.</figcaption>
-</figure>
-</article>
-<article class="project" id="research-finder">
-<div>
-<span class="status">Open source · MIT licensed</span>
-<h3>Research discovery</h3>
-<p>
-<strong>How can I spend less time repeating searches and more time reading?</strong>
-</p>
-<p>A research discovery tool that queries PubMed, Europe PMC, and OpenAlex, with assistance translating a question into Boolean searches.</p>
-<p class="muted">Search assistance still needs scrutiny: inspect the generated query, check source records, and look for important papers the search missed. This is not a guarantee of a comprehensive literature search.</p>
-<div class="actions">
-<a class="button" href="https://github.com/kobeqanderson-png/rsrchassistantstreamlit">Explore the repository ↗</a>
-</div>
-</div>
-<figure>
-<img src="assets/research-hub.jpeg" alt="Research Hub interface from the existing project archive" loading="lazy">
-<figcaption>A view of the research discovery project.</figcaption>
-</figure>
-</article>
-</section>
-<section class="section wrap" id="build">
-<div class="two-col">
-<div>
-<p class="eyebrow">03 / Building for science</p>
-<h2>What could your<br>printer do for science?</h2>
-<p>I want this section to be useful beyond showing that I can make a model. The starting point is a practical guide: how to turn an awkward lab task into a small, testable design.</p>
-<p>Start with something bounded—a holder, an organizer, or a positioning jig. Define what it needs to do, measure the things it touches, and print a fit test before committing to a full design.</p>
-<div class="actions">
-<a class="button primary" href="guides/3d-printing-for-science.html">Read the practical guide ↗</a>
-</div>
-</div>
-<figure style="margin:0">
-<img class="guide-img" src="assets/fabrication.jpeg" alt="Kobe’s existing Tinkercad design work" loading="lazy">
-<figcaption>Design archive / A CAD study. The guide walks through requirements, prototyping, and evaluation.</figcaption>
-</figure>
-</div>
-</section>
-<section class="section wrap" id="process">
-<p class="eyebrow">04 / How I work</p>
-<h2>From a question to something we can test.</h2>
-<div class="steps">
-<article>
-<span class="eyebrow">01 — Ask</span>
-<h3>Find the real constraint.</h3>
-<p>What question matters? What is getting in the way? What would a useful result look like?</p>
-</article>
-<article>
-<span class="eyebrow">02 — Build</span>
-<h3>Make a working version.</h3>
-<p>Learn the method, write the code, or design the part needed to make the idea testable.</p>
-</article>
-<article>
-<span class="eyebrow">03 — Examine</span>
-<h3>Look for where it fails.</h3>
-<p>Check the output against something known. Invite someone else to try the workflow.</p>
-</article>
-<article>
-<span class="eyebrow">04 — Revise</span>
-<h3>Let evidence change it.</h3>
-<p>Document the limits, fix what matters, and share enough for others to inspect the work.</p>
-</article>
-</div>
-</section>
+
 <section class="section wrap" id="research">
-<div class="section-intro">
-<p class="eyebrow">05 / Research &amp; selected work</p>
-<h2>The questions behind the tools.</h2>
-<p>My research interests include spatial navigation, learning, memory, and individual differences in checking behavior. The software and fabrication work grow out of wanting to investigate questions more directly.</p>
-</div>
-<div class="archive">
-<article>
-<h3>Watching rats decide: pose tracking of archival water-maze video</h3>
-<p>DeepLabCut models trained on a 1999 cohort and a current cohort measure what rats do while placed on the hidden platform. Most males stay; most females scan with their heads, leave, and return, often toward where the platform sat during training. The pattern holds across three tests and two cohorts, and stay/leave calls match handwritten session notes in 48 of 50 checks. Poster data, still being validated.</p>
-<p><a href="research/">Watch the videos and see the data ↗</a></p>
-</article>
-<article>
-<h3>Compulsive checking in the water maze · SfN 2026</h3>
-<p>Overtraining and aversive affect as a rat model of OCD-like checking, with attention to sex and individual differences. Poster PSTR324.02, Society for Neuroscience, Washington, DC, November 18, 2026.</p>
-</article>
-<article>
-<h3>M.A. thesis: checking behavior and PV/PNN histology</h3>
-<p>Relating archived water-maze checking behavior to parvalbumin interneurons and perineuronal nets (WFA) in dorsolateral and dorsomedial striatum, prefrontal cortex, and hippocampus.</p>
-</article>
-<article>
-<h3>Global Water Maze Behavioral Atlas</h3>
-<p>An independent project harmonizing public Morris water maze trajectory datasets to test for behavioral patterns that haven’t been characterized yet, starting with slowing near the goal.</p>
-</article>
-</div>
-<div class="archive">
-<article>
-<img src="assets/county-health.jpeg" alt="County health analysis charts from Kobe’s project archive" loading="lazy">
-<h3>County health analysis</h3>
-<p>Exploring relationships between health insurance coverage and health outcomes using public county-level data, regression, clustering, and visual summaries. These are observational analyses; associations do not establish causation.</p>
-</article>
-<article>
-<img src="assets/water-maze.jpeg" alt="Virtual water-maze prototype from Kobe’s project archive" loading="lazy">
-<h3>Virtual water-maze exploration</h3>
-<p>A software prototype for exploring spatial-navigation task ideas. A functioning virtual environment is a development milestone; equivalence to a validated behavioral task remains a separate question.</p>
-</article>
-</div>
+  <div class="section-head">
+    <p class="label rule-label">Featured research</p>
+    <h2>Watching rats decide whether to leave</h2>
+  </div>
+  <div class="feature">
+    <div>
+      <video src="research/analysis/demos_trimmed/leave_vs_stay_sp1.mp4" controls muted loop playsinline autoplay preload="metadata"></video>
+      <p class="cap muted ital">Archival 1999 cohort, tracked with DeepLabCut. Full 120 s at 4× speed: a typical female leaves three times; a typical male never moves.</p>
+    </div>
+    <div style="display:grid;gap:18px">
+      <p>Rats are placed on a hidden platform for 120 seconds. Most males stay put. Most females scan with their heads, step away, and come back, often toward where the platform sat during training. I trained pose-estimation models on archival and current-cohort video to measure that behavior frame by frame.</p>
+      <div class="stats">
+        <div><b>12 vs 4</b><span>of 16 males vs 16 females never left (archival)</span></div>
+        <div><b>3 of 3</b><span>tests show the same pattern</span></div>
+        <div><b>48/50</b><span>stay/leave calls match session notes</span></div>
+      </div>
+      <div class="actions">
+        <a class="btn solid" href="research/">Videos and summary</a>
+        <a class="btn" href="research/analysis/">Full analysis</a>
+      </div>
+      <p class="muted ital" style="font-size:16px">Poster data, descriptive and still being validated.</p>
+    </div>
+  </div>
+
+  <div class="entries">
+    <article class="entry"><p class="meta">SfN 2026 · PSTR324.02</p><div><h3>Compulsive checking in the water maze</h3><p>Overtraining and aversive affect as a rat model of OCD-like checking, with sex and individual differences. Poster, Society for Neuroscience, Washington, DC, Wednesday, November 18, 2026.</p></div></article>
+    <article class="entry"><p class="meta">M.A. thesis</p><div><h3>Checking behavior and PV/PNN histology</h3><p>Relating archived checking behavior to parvalbumin interneurons and perineuronal nets (WFA) in dorsolateral and dorsomedial striatum, prefrontal cortex, and hippocampus.</p></div></article>
+    <article class="entry"><p class="meta">Independent</p><div><h3>Global Water Maze Behavioral Atlas</h3><p>Harmonizing public Morris water maze trajectory datasets to test for behavior nobody has characterized yet, starting with slowing near the goal.</p></div></article>
+    <article class="entry"><p class="meta">Selected work</p><div><h3>County health analysis</h3><p>Insurance coverage and health outcomes from public county-level data, using regression, clustering, and visual summaries. Finalist, Towson Data Analytics Competition. Associations, not causation.</p></div></article>
+    <article class="entry"><p class="meta">Prototype</p><div><h3>Virtual water maze</h3><p>A software prototype for human spatial-navigation tasks that parallel the rat water maze. A working environment is a milestone; equivalence to a validated task is a separate question.</p></div></article>
+  </div>
 </section>
-<section class="section wrap" id="collaborate">
-<div class="contact">
-<div>
-<p class="eyebrow">06 / Collaborate</p>
-<h2>Bring a question.<br>Or challenge something I’ve built.</h2>
-<p>I want to put these skills to use helping other people do research. If you have a workflow that keeps getting in the way, an idea you want to make testable, or criticism of one of these projects, I’d like to hear it.</p>
-</div>
-<div>
-<p>
-<strong>For project feedback:</strong> open an issue in the relevant repository. Include what you tried, what you expected, and what happened.</p>
-<p>
-<strong>For collaboration or scoped paid work:</strong> tell me the research goal, the practical constraint, and the deliverable you need. We can establish scope, timing, and cost before work starts.</p>
-<p>
-<a href="mailto:kobe.q.anderson@gmail.com">kobe.q.anderson@gmail.com ↗</a>
-</p>
-<p>
-<a href="https://github.com/kobeqanderson-png">Find the work on GitHub ↗</a>
-</p>
-</div>
-</div>
+
+<section class="section wrap" id="tools">
+  <div class="section-head">
+    <p class="label rule-label">Open research tools</p>
+    <h2>Work in the open</h2>
+    <p class="muted">Public betas with the code available to inspect. A working demonstration is where review starts.</p>
+  </div>
+  <div class="tools">
+    <article class="tool">
+      <img src="assets/mobiledlc-frame.jpeg" alt="A pose-tracked frame of a rat on the water-maze platform" loading="lazy">
+      <p class="label">Public beta · MIT</p>
+      <h3>MobileDLC</h3>
+      <p>Touch-based frame labeling for DeepLabCut, so annotation can happen on a phone or tablet and flow back into the analysis.</p>
+      <p class="note">Where I want criticism: annotation precision, gestures, accessibility, and whether exported labels keep the intended data.</p>
+      <div class="links"><a href="https://github.com/kobeqanderson-png/MobileDLC#readme">Beta guide</a><a href="https://github.com/kobeqanderson-png/MobileDLC/issues/new/choose">Report a problem</a></div>
+    </article>
+    <article class="tool">
+      <img src="assets/neuropipe.jpeg" alt="NeuroPipe-SABV analysis workflow" loading="lazy">
+      <p class="label">Public beta · MIT</p>
+      <h3>NeuroPipe-SABV</h3>
+      <p>A Streamlit workflow for preclinical behavioral data that keeps sex as a biological variable visible at every step.</p>
+      <p class="note">Does not certify NIH compliance or validate a study design.</p>
+      <div class="links"><a href="https://neuropipesabv.streamlit.app/">Open the app</a><a href="https://github.com/kobeqanderson-png/NeuroPipe-SABV#readme">Beta guide</a></div>
+    </article>
+    <article class="tool">
+      <img src="assets/research-hub.jpeg" alt="Research discovery tool" loading="lazy">
+      <p class="label">Open source · MIT</p>
+      <h3>Research Hub</h3>
+      <p>Searches PubMed, Europe PMC, and OpenAlex and helps turn a research question into Boolean queries.</p>
+      <p class="note">Not a guarantee of a comprehensive literature search.</p>
+      <div class="links"><a href="https://rsrchfinder.streamlit.app/">Open the app</a><a href="https://github.com/kobeqanderson-png/rsrchassistantstreamlit">Repository</a></div>
+    </article>
+  </div>
+  <div class="entries">
+    <article class="entry"><p class="meta">Fabrication</p><div><h3>3D printing for science</h3><p>A practical guide to turning an awkward lab task into a small, testable design: define what it needs to do, measure what it touches, and print a fit test before committing.</p><div class="links"><a href="guides/3d-printing-for-science.html">Read the guide</a></div></div></article>
+  </div>
+</section>
+
+<section class="section wrap" id="about">
+  <div class="two">
+    <div class="section-head">
+      <p class="label rule-label">About</p>
+      <h2>The question comes first.</h2>
+    </div>
+    <div style="display:grid;gap:14px">
+      <p>My background is in behavioral neuroscience, with interests in learning, memory, spatial navigation, and individual differences in behavior. The questions lead me between behavioral experiments, data analysis, programming, and physical prototyping.</p>
+      <p>My strength is taking a problem far enough that we can actually examine it: a working interface, an analysis we can inspect, or a physical tool we can try. I learn what the next step requires, and I change direction when the evidence calls for it.</p>
+    </div>
+  </div>
+  <div class="steps">
+    <article><p class="label">01 · Ask</p><h3>Find the real constraint.</h3><p>What question matters, and what would a useful result look like?</p></article>
+    <article><p class="label">02 · Build</p><h3>Make a working version.</h3><p>Learn the method, write the code, or design the part.</p></article>
+    <article><p class="label">03 · Examine</p><h3>Look for where it fails.</h3><p>Check against something known. Invite someone else to try it.</p></article>
+    <article><p class="label">04 · Revise</p><h3>Let evidence change it.</h3><p>Document the limits and share enough for others to inspect.</p></article>
+  </div>
+</section>
+
+<section class="section wrap" id="contact">
+  <div class="contact">
+    <div class="section-head">
+      <p class="label rule-label">Contact</p>
+      <h2>Bring a question, or challenge something I've built.</h2>
+      <p>I'm applying to PhD programs for Fall 2027 and open to research collaborations and scoped analysis work.</p>
+    </div>
+    <div>
+      <p><a href="mailto:kobe.q.anderson@gmail.com">kobe.q.anderson@gmail.com</a></p>
+      <p><a href="cv.html">CV</a> · <a href="assets/Kobe_Anderson_CV.pdf">PDF</a></p>
+      <p><a href="https://github.com/kobeqanderson-png">github.com/kobeqanderson-png</a></p>
+      <p class="muted" style="font-size:16px">For feedback on a tool, open an issue in its repository: what you tried, what you expected, and what happened.</p>
+    </div>
+  </div>
 </section>
 </main>
-<footer>
-<div class="wrap">
-<span>Kobe Anderson · Towson University M.A. candidate</span>
-<span>Updated November 2026 · Built to evolve.</span>
-</div>
-</footer>
+
+<footer class="site-foot"><div class="wrap"><span>Kobe Q. Anderson · Towson University</span><span>Updated November 2026</span></div></footer>
 </body>
 </html>
