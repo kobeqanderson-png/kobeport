@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kobe Q. Anderson — Research</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#eef2f3;--panel:#fff;--ink:#132029;--ink2:#53646d;--rule:#d2dce0;--accent:#0f6b74;--f:#2a78d6;--m:#d9591f;
+--display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"Source Sans 3","Segoe UI",Arial,sans-serif;--mono:"IBM Plex Mono",Consolas,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#0d161b;--panel:#15222a;--ink:#e3eaee;--ink2:#9db0b9;--rule:#28383f;--accent:#5cc3cc;--f:#5b9cec;--m:#f08a5d;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5}
+.wrap{max-width:1080px;margin:0 auto;padding:calc(20px + env(safe-area-inset-top,0px)) max(18px,env(safe-area-inset-right,0px)) calc(56px + env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px));display:grid;gap:34px}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:10px}
+.name{font-family:var(--display);font-size:24px;font-weight:600;letter-spacing:.02em}
+.who{font-size:14.5px;color:var(--ink2)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1,h2,h3{font-family:var(--display);font-weight:600;margin:0;line-height:1.05;text-wrap:balance}
+h1{font-size:clamp(40px,7vw,64px)} h2{font-size:clamp(26px,3.4vw,34px)} h3{font-size:22px}
+.lede{font-size:19px;max-width:66ch;margin:10px 0 0}
+.f{color:var(--f);font-weight:600}.m{color:var(--m);font-weight:600}
+section{display:grid;gap:14px}
+.hero video{width:100%;display:block;background:#000;border:1px solid var(--rule);border-top:4px solid var(--accent)}
+.cap{font-size:15px;color:var(--ink2);margin:0}.cap b{color:var(--ink)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.kpi{background:var(--panel);padding:14px 16px;display:grid;gap:4px}
+.kpi .lab{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)}
+.kpi b{font-family:var(--display);font-size:34px;font-weight:600;line-height:1}
+.kpi b i{font-style:normal;font-size:18px;color:var(--ink2)}
+.kpi span:last-child{font-size:14px;color:var(--ink2)}
+.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.vids>*{min-width:0}
+figure{margin:0;background:var(--panel);border:1px solid var(--rule);display:grid;align-content:start}
+figure video{width:100%;display:block;background:#000}
+figure img{width:100%;display:block;background:#fff}
+figcaption{padding:10px 12px;font-size:14.5px;color:var(--ink2)} figcaption b{display:block;color:var(--ink);font-size:15.5px}
+.btns{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.btn{display:grid;gap:2px;padding:14px 16px;background:var(--panel);border:1px solid var(--rule);border-left:4px solid var(--accent);color:var(--ink);text-decoration:none}
+.btn b{font-family:var(--display);font-size:22px;font-weight:600}
+.btn span{font-size:14px;color:var(--ink2)}
+.btn:hover{border-color:var(--accent)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--rule);padding:16px 18px;display:grid;gap:6px;align-content:start}
+.card p{margin:0;color:var(--ink2);font-size:15.5px}
+.card a{color:var(--accent);font-size:14.5px;word-break:break-word}
+.tag{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.note{font-size:14px;color:var(--ink2);max-width:80ch;border-left:3px solid var(--rule);padding-left:12px}
+.contact{background:var(--panel);border:1px solid var(--rule);padding:18px;display:grid;gap:4px}
+.contact a{color:var(--accent)}
+</style></head><body><div class="wrap">
+
+<div class="top"><span class="name">Kobe Q. Anderson</span><span class="who">Behavioral neuroscience · M.A. candidate, Towson University · Devan Lab</span></div>
+
+<section class="hero">
+  <div class="eyebrow">Pose tracking of archival water-maze video</div>
+  <h1>Watching rats decide whether to leave</h1>
+  <p class="lede">Rats are placed on a hidden platform for 120 s. Most <span class="m">males</span> stay put. Most <span class="f">females</span> scan with their heads, step away, and come back. I trained DeepLabCut models on footage from a 1999 cohort and a current cohort to measure that behavior frame by frame.</p>
+  <video src="analysis/demos_trimmed/leave_vs_stay_sp1.mp4" controls muted loop playsinline autoplay preload="metadata"></video>
+  <p class="cap"><b>Archival cohort, leaving vs staying.</b> Full 120 s at 4× speed. A typical female leaves three times, first at 7.6 s; a typical male never moves.</p>
+</section>
+
+<div class="kpis">
+  <div class="kpi"><span class="lab">Archival cohort</span><b><span class="m">12/16</span> <i>vs</i> <span class="f">4/16</span></b><span>males vs females that never left</span></div>
+  <div class="kpi"><span class="lab">Current cohort · Day 6</span><b><span class="m">11/14</span> <i>vs</i> <span class="f">3/15</span></b><span>same pattern at standard water depth</span></div>
+  <div class="kpi"><span class="lab">Current cohort · Day 8</span><b><span class="m">13/15</span> <i>vs</i> <span class="f">1/15</span></b><span>same pattern at raised depth</span></div>
+  <div class="kpi"><span class="lab">Tracking check</span><b>48/50</b><span>stay/leave calls match handwritten notes</span></div>
+</div>
+
+<section>
+  <div class="eyebrow">Before they leave</div>
+  <h2>Head scanning on the platform</h2>
+  <p class="cap" style="max-width:70ch">Females turn their heads faster and make more VTE-like back-and-forth sweeps while still on the platform, in all three tests. When they leave, they head toward where the platform sat during training more than toward control spots.</p>
+  <div class="vids">
+    <figure><video src="analysis/demos/head_turning_kac_d8.mp4" controls muted loop playsinline preload="metadata"></video><figcaption><b>Head turning, tracked</b>Current cohort, Day 8. Pose points on nose, ears and body while the rat is on the platform.</figcaption></figure>
+    <figure><video src="analysis/demos_trimmed/departure_to_P1.mp4" controls muted loop playsinline preload="metadata"></video><figcaption><b>Out to the old platform and back</b>A female leaves, swims to where the platform was during training (purple ring), and returns. Real speed.</figcaption></figure>
+    <figure><video src="analysis/demos_trimmed/leave_vs_stay_kac_d6.mp4" controls muted loop playsinline preload="metadata"></video><figcaption><b>Leaving vs staying, current cohort</b>Day 6, standard water, 4× speed.</figcaption></figure>
+  </div>
+  <figure><img src="analysis/figures/hero_story.png" alt="Sex difference in staying across three tests, survival curves of rats still on the platform, and where departures went."><figcaption><b>The pattern in one figure.</b> A: never-left rates by sex in three tests. B: females start leaving within seconds. C: where leavers swim before returning.</figcaption></figure>
+  <p class="note">Poster data, descriptive and still being validated. Full methods, every statistic, and what not to over-read are in the analysis dashboard.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Go deeper</div>
+  <div class="btns">
+    <a class="btn" href="analysis/"><b>Full analysis</b><span>All clips, results table, models, figures</span></a>
+    <a class="btn" href="../cv.html"><b>CV</b><span>Updated November 2026</span></a>
+    <a class="btn" href="../"><b>Portfolio</b><span>kobeport.vercel.app</span></a>
+    <a class="btn" href="https://github.com/kobeqanderson-png"><b>GitHub</b><span>Open-source research tools</span></a>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Research</div>
+  <h2>What I'm working on</h2>
+  <div class="cards">
+    <div class="card"><span class="tag">SfN 2026 · PSTR324.02</span><h3>Compulsive checking in the water maze</h3><p>Overtraining and aversive affect as a rat model of OCD-like checking, with sex and individual differences. Poster session Wednesday, November 18.</p></div>
+    <div class="card"><span class="tag">M.A. thesis</span><h3>Checking behavior and PV/PNN histology</h3><p>Relating checking to parvalbumin interneurons and perineuronal nets in striatum, prefrontal cortex, and hippocampus.</p></div>
+    <div class="card"><span class="tag">Independent</span><h3>Global Water Maze Behavioral Atlas</h3><p>Harmonizing public Morris water maze datasets to look for behavior nobody has characterized yet.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Tools I've built</div>
+  <div class="cards">
+    <div class="card"><h3>MobileDLC</h3><p>DeepLabCut frame labeling on phones and tablets.</p><a href="https://github.com/kobeqanderson-png/MobileDLC">github.com/kobeqanderson-png/MobileDLC</a></div>
+    <div class="card"><h3>NeuroPipe-SABV</h3><p>Behavioral data workflow with sex as a biological variable.</p><a href="https://neuropipesabv.streamlit.app/">neuropipesabv.streamlit.app</a></div>
+    <div class="card"><h3>Research Hub</h3><p>Literature search across PubMed, Europe PMC, and OpenAlex.</p><a href="https://rsrchfinder.streamlit.app/">rsrchfinder.streamlit.app</a></div>
+  </div>
+</section>
+
+<div class="contact"><div class="eyebrow">Get in touch</div><span>kobe.q.anderson@gmail.com</span><span>Looking for PhD positions for Fall 2027 · Laboratory of Comparative Neuroscience, Towson University</span></div>
+</div></body></html>
